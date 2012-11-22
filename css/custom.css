@@ -1,0 +1,320 @@
+﻿/*****Reset*****/ 
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{margin:0; padding:0}
+
+/************Desktop version layout******************/
+
+body
+{
+    margin: auto;
+    color: #000000;
+    background-color: #c2c2c2;
+    width: 100%;
+}
+
+#header
+{
+    background-color: #77ff77;
+    height:10em;
+    padding:0;
+}
+
+#titles
+{
+    background-color: #7777ff;
+    float:left;
+    margin:0;
+    height:9em;
+}
+
+#titles h1, h2
+{
+    text-align:right;
+    font-size:1.5em;
+}
+
+#logo
+{
+    background-color:#ff7777;
+    padding:.5em;
+    margin:0;
+    float:right;
+    height:10em;
+}
+
+#logo img
+{
+    height:8em;
+    width:8em;
+    float:right;
+}
+
+#horizontal-rules
+{
+    display:none;
+}
+
+#main-navigation
+{
+    background-color:#ffffff;
+    height:5em;
+    overflow:visible;/* overrides the overflow:hidden setting in columnal.css */
+}
+
+#topNav
+{
+    z-index:0;
+}
+
+
+#nav1
+{
+    height:5em;
+    float:none;
+    margin:1.8em auto 0 auto;
+}
+
+#nav1 ul li
+{
+    display:inline;
+    font-size:1.2em;
+    padding:1em;
+    background-color:#ffffff;
+}
+
+#popup-nav
+{
+    display:none;
+}
+
+#content
+{
+    background-color:#00ff00;
+}
+
+#main-content
+{
+    background-color: #77ff77;
+    float:left;
+    margin:0;
+    height:25em;
+    position:static;/* overrides the position:relative setting in columnal.css */
+}
+
+#content-text
+{
+    padding:.5em 0 .5em 1em;
+    position:static;/* overrides the position:relative setting in columnal.css */
+}
+
+#main-content img
+{
+    height:20em;
+    width:20em;
+    float:right;
+    padding:.5em;
+}
+
+#sidebar
+{
+    background-color:#ff7777;
+    padding:.5em;
+    margin:0;
+    float:right;
+    height:25em;
+}
+
+#nav2
+{
+    background-color:#ff0000;
+    height:25em;
+    margin:0;
+}
+
+#nav2 ul li
+{
+    background-color:#ffffff;
+    display:block;
+    font-size:1.2em;
+    padding:1em 2em 0 0;
+    margin:.5em;
+}
+
+#footer
+{
+    background-color: #7777ff;
+    padding:1em 0 0 1em;
+    /*stop padding from resizing the footer dimensions*/
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+}
+
+#footer-navigation
+{
+    background-color:#7777ff;
+    height:4em;
+}
+
+#fnav1, #fnav2
+{
+    margin: .5em 1em .5em 0;
+    display:inline;
+}
+
+#fnav1 ul, #fnav2 ul
+{
+    margin:-.5em;
+    display: inline;
+}
+
+#fnav1 ul li, #fnav2 ul li
+{
+    display:inline;
+    font-size:1.2em;
+    padding:1em;
+    background-color:#ffffff;
+    width:50px;
+    margin:.5em;
+}
+
+#copyright
+{
+    background-color:#ff7777;
+    height:2em;
+    text-align:right;
+}
+
+#copyright p
+{
+    padding-right:1em;
+}
+
+
+/*****End Desktop version layout**************/
+
+
+
+
+/***********begin media queries*********************/
+
+
+@media only screen and (max-width : 1000px) {
+
+  /* Small screen, non-retina */
+  	/* Columnal content control - use on any elements to show/hide content on mobile*/
+
+#main-navigation, #titles
+{
+    display:none;
+}
+
+#topNav
+{
+    display:none;
+}
+
+
+#logo
+{
+    float:left;
+}
+
+#horizontal-rules
+{
+    color:#ff0000;
+    border:.5em solid #ff0000;
+    background-color:#ff0000;
+    display:block;
+}
+
+#popup-nav
+{
+    background-color:#ff0000;
+    display:inline;
+    padding:1.5em 1em .5em 1em;
+    font-size:1.5em;
+    float:right;
+    height:2em;
+    margin:1em;
+}
+
+#popup-nav a
+{
+    background-color:#00ff00;    
+}
+
+#main-content
+{
+    display:block;
+    width:100%;
+
+}
+
+#sidebar
+{
+    display:block;
+    float:left;
+    width:100%;
+}
+
+#nav2
+{
+    background-color:#0000ff;
+    margin:0;
+}
+
+#nav2 ul
+{
+    margin:.5em auto 0 auto;
+}
+
+#nav2 ul li
+{
+    display:inline-block;
+    font-size:1.2em;
+    padding:1em 2em 0 0;
+    height:4em;
+    width:4em;
+    margin:1em;
+}
+
+#footer
+{
+    height:20em;
+}
+
+#footer-navigation
+{
+    background-color:#7777ff;
+    height:15em;
+}
+
+#fnav1, #fnav2
+{
+    margin: .5em 1em .5em 0;
+    display: inline-block;
+    width: 120px;
+    border-right: 2px solid white;
+    height: 13em;
+}
+
+#fnav1 ul, #fnav2 ul
+{
+    margin:-.5em;
+}
+
+
+#fnav1 ul li, #fnav2 ul li
+{
+    display:block;
+    font-size:1.2em;
+    padding:1em;
+    background-color:#ffffff;
+    width:50px;
+    margin:.5em;
+}
+
+
+} /*end max-device-width: 1000px*/
+
+
+/***********end media queries*********************/

@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <title>dropdown_2</title>
+	
+    <link href="css/columnal.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/custom.css?<?php echo time(); ?>" rel="stylesheet" type="text/css" />
+    
+    <link href="css/dropDrownNav.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#nav li").has("ul").hover(function () {
+                $(this).addClass("current").children("ul").show().hide().fadeIn(500);
+            }, function () {
+                $(this).removeClass("current").children("ul").stop(true, true).css("display", "none");
+            });
+
+        });
+</script>
+
+
+
+</head>
+<body>
+  <div id="wrapper" class="container">
+
+      <div id="header" class="row">
+          <div id="titles" class="col_10">
+            <h1>Template 1 Title</h1>
+            <h2>Tag Line</h2>
+          </div>
+      
+          <div id="logo" class="col_2">
+            <img src="images/logo1.jpg" alt="" />
+          </div><!--end logo-->    
+
+          <div id="popup-nav"><!--mobile version-->
+            <a href="#">popup navigation</a>
+          </div>
+
+  
+      </div><!--end header-->    
+
+      <div id="horizontal-rules">
+      </div>
+
+    <!--begin added nav-->
+    <div id="main-navigation" class="row" >
+        <div id="nav">
+        <ul>
+            <li class="first"><a href="#">Home</a>
+            <ul>
+                <li><a href="#">Home1</a></li>
+                <li><a href="#">Home2</a></li>
+                <li><a href="#">Home3</a></li>
+            </ul>
+            </li>
+            <li><a href="#">About Me</a>
+            <ul>
+                <li><a href="#">About Me1</a></li>
+                <li><a href="#">About Me2</a></li>
+                <li><a href="#">About Me3</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Portfolio</a>
+            <ul>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Print</a></li>
+                <li><a href="#">Photos</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Contact Me</a>
+            <ul>
+                <li><a href="#">Contact Me1</a></li>
+                <li><a href="#">Contact Me2</a></li>
+                <li><a href="#">Contact Me3</a></li>
+            </ul>
+            </li>
+        </ul>
+        </div>
+    </div><!--end main navigation-->
+    <!--end added nav-->
+
+
+      <div id="content" class="row">
+
+          <div id="main-content" class="col_10">
+              <div id="content-text" class="col_5">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              </div>
+              <img src="images/main-image1.jpg" alt="" />
+          </div><!--end main-content-->    
+
+
+      <div id="sidebar" class="col_2">
+
+      <div id="nav2"> 
+          <ul>
+          <li><a href="#">Link1b</a></li><li><a href="#">Link2b</a></li><li><a href="#">Link3b</a></li><li><a href="#">Link4b</a></li><li><a href="#">Link5b</a></li><li><a href="#">Link6b</a></li>
+          </ul>
+      </div>
+
+      </div><!--end sidebar-->
+
+      </div><!--end content-->
+
+
+
+  <div id="footer" class="row">
+     <div id="footer-navigation" class="row">
+          <div id="fnav1">  
+              <ul>
+              <li><a href="#">Link1b</a></li>
+              <li><a href="#">Link2b</a></li>
+              <li><a href="#">Link3b</a></li>
+              </ul>
+          </div>
+          <div id="fnav2">  
+              <ul>
+              <li><a href="#">Link4b</a></li>
+              <li><a href="#">Link5b</a></li>
+              <li><a href="#">Link6b</a></li>
+              </ul>
+          </div>
+     </div><!--end footer-navigation-->
+  </div><!--end footer-->
+
+  <div id="copyright" class="row">
+    <p>copyright notice</p>
+  </div>
+
+
+
+</body>
+</html>
